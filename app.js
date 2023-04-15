@@ -5,7 +5,7 @@ const user=require('./models/user');
 const mongoose = require('mongoose');
 const app = express();
 const port = 80
-mongoose.connect("mongodb://localhost:27017/user",{userNewUrlParser : true});
+mongoose.connect("mongodb://0.0.0.0:27017/user",{useNewUrlParser : true});
 app.set('view engine', 'pug')
 
 app.use(bodyparser.json());
